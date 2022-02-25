@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    background-color: lightcoral;
+    position: relative;
+    animation-name:myanimation ;
+    animation-duration: 2s;
+    
+    animation-fill-mode: forwards;
+    
+    animation-timing-function: ease-in-out;
+}
+h6{
+    display: flex;
+    justify-content: center;
+    
+   
+
+}
+
+@keyframes myanimation{ 
+
+0% {background-color: lime;left: 0px; top: 0px; border-radius: 0%;}
+25% {background-color: red;left: 300px; top: 0px; border-radius: 0% 50% 0% 0%;}
+50% {background-color: rgb(17, 0, 255);left: 300px; top: 300px; border-radius: 0% 50% 50% 0%;}
+75% {background-color: rgb(2, 22, 14); left: 0px; top: 300px; border-radius: 0% 50% 50% 50%;}
+100% {background-color: rgb(2, 22, 14); left: 0px; top: 0px; border-radius: 50% 50% 50% 50%;}
+}
+
+
